@@ -7,31 +7,50 @@ h1 {
 img {
     opacity: 0.5;
     border-radius: 3px;
-  }
+}
 
 img:hover {
     opacity: 1.0;
 }
 
-img:first-of-type{
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+img:first-of-type {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
 
-/*-------------  menu ----------*/
-#menu-burger{
-    width: 40px;
-    height: 40px;
+/*-------------  media ----------*/
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    /*-------------  menu burger ----------*/
+    #menu-burger {
+        width: 40px;
+        height: 40px;
+    }
+
+    #checkbox-burger {
+        display: none;
+    }
+
+    #checkbox-burger+nav {
+        display: none;
+    }
+
+    #checkbox-burger:checked+nav {
+        display: block;
+    }
 }
 
-#checkbox-burger{
-    display: none;
-}
+@media (min-width: 600px) {
+    body {
+        background-color: darkgrey;
+    }
 
-#checkbox-burger + nav{
-    display: none;
-}
-
-#checkbox-burger:checked + nav{
-    display: block;
+    #menu-burger,
+    #checkbox-burger {
+        display: none;
+    }
 }
