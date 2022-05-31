@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet'
         type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Portfolio Matthieu Dronzin</title>
 </head>
 
 <body>
-    <!-- header -->
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-md-auto">
@@ -32,8 +32,7 @@
                     <ul>
                         <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#projets">Projets</a></li>
-                        <li><a href="#etudes">Etudes</a></li>
-                        <li><a href="#articles">Articles</a></li>
+                        <li><a href="#about">A propos</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -43,118 +42,159 @@
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
-                    <div class="bg">
-                        <div class="row">
-                            <div class="col">
-                                <h1 class="animated fadeInDown">
-                                  J<span style="color:#E04343;">o</span>hn<br>
-                                  <span>D<span style="color:#FFE800">o</span>e</span>
-                                </h1>
-                                <h3 class="animated fadeInUp delay-05s"><span class="rotate" style="display: inline; opacity: 0.0298262;">Photographer</span></h3>
-                              </div>
-                        </div>
-                    </div>
+                <div class="col bg">
+                    <h1>
+                        M<span style="color:#E04343;">a</span>tthieu<br>
+                        Dron<span style="color:#FFE800;">z<span style="color:#E04343;">i</span>n</span><br>
+                        Developpeur Web et Web Mobile
+                    </h1>
                 </div>
             </div>
         </div>
-
-
-
-
-
-        <!--<div>
-            <img src="../Images/font-image.jpg" alt="background image" class="img-fluid">
+    </section>
+    <section>
+        <h2>Projets réalisés</h2>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-5 border border-light border-3 rounded">
+                    <article class="center-elements">
+                        <img src="../Images/rocket.svg" alt="rocket launch project">
+                        <h3>Rocket launch</h3>
+                        <p>Et oui, Elon a tout apris de moi.... Chut, c'est un secret.</p>
+                        <p>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Link with href
+                            </a>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Button with data-bs-target
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-5 border border-light border-3 rounded">
+                    <article class="center-elements">
+                        <img src="../Images/minion.svg" alt=" Stuart project">
+                        <h3>Etude de Stuart</h3>
+                        <p>Un minion pas si mignon, prêt à tout pour se faire remarquer!</p>
+                        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
+                            title="Popover title"
+                            data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to
+                            toggle popover</button>
+                    </article>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <h1 class="animated fadeInDown">
-                  J<span style="color:#E04343;">o</span>hn<br>
-                  <span>D<span style="color:#FFE800">o</span>e</span>
-                </h1>
-                <h3 class="animated fadeInUp delay-05s"><span class="rotate" style="display: inline; opacity: 0.0298262;">Photographer</span></h3>
-              </div>
-        </div>-->
-    </section>
-
-    <h2 class="center-text">Projets réalisés</h2>
-    <section>
-        <article class="center-elements">
-            <h3>Projet 1</h3>
-            <img src="https://via.placeholder.com/150" alt="first project image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium atque blanditiis corporis
-                ducimus, fuga harum illum obcaecati qui, quisquam saepe, sapiente tempore vero voluptate?</p>
-            <button>En savoir plus</button>
-        </article>
-        <article class="center-elements">
-            <h3>Projet 2</h3>
-            <img src="https://via.placeholder.com/150" alt="second project image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium atque blanditiis corporis
-                ducimus, fuga harum illum obcaecati qui, quisquam saepe, sapiente tempore vero voluptate?</p>
-            <button>En savoir plus</button>
-        </article>
-        <article class="center-elements">
-            <h3>Projet 3</h3>
-            <img src="https://via.placeholder.com/150" alt="third project image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium atque blanditiis corporis
-                ducimus, fuga harum illum obcaecati qui, quisquam saepe, sapiente tempore vero voluptate?</p>
-            <button>En savoir plus</button>
-        </article>
-    </section>
-    <section>
-        <h2>Etudes</h2>
-        <!-- TODO: replace image source -->
-        <div class="center-elements">
-            <img id="avatar" src="https://via.placeholder.com/100" alt="Photo de Matthieu Dronzin">
         </div>
-        <ul>
-            <li>Nom</li>
-            <li>Prenom</li>
-            <li>Age</li>
-            <li>Adresse email</li>
-            <li>Telephone</li>
-        </ul>
     </section>
     <section>
-        <p>Date</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, vel.</p>
-        <p>Date</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, vel.</p>
-        <p>Date</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, vel.</p>
+        <h2>A propos de moi</h2>
+        <div class="bg-test"> 
+            <div class="etude-inline">
+                <img id="avatar" src="../Images/AvatarMaker.svg" alt="Photo de Matthieu Dronzin">
+                <ul>
+                    <li> <span class="material-icons">
+                            badge
+                        </span><span style='margin-right:1em; display:inline-block;'>&nbsp;</span>Matthieu DRONZIN</li>
+                    <li> <span class="material-icons">
+                            cake
+                        </span><span style='margin-right:1em; display:inline-block;'>&nbsp;</span>35 ans et toutes mes
+                        dents</li>
+                    <li><span class="material-icons">
+                            directions_car
+                        </span><span style='margin-right:1em; display:inline-block;'>&nbsp;</span>Permis A, B, C et D
+                    </li>
+                    <li> <span class="material-icons">
+                            phone
+                        </span><span style='margin-right:1em; display:inline-block;'>&nbsp;</span>06 16 (petit
+                        curieux....)</li>
+                </ul>
+                </ul>
+            </div>
+        </div>
     </section>
     <section>
-        <article class="center-elements">
-            <h2>Article 1</h2>
-            <img src="https://via.placeholder.com/250" alt="article image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet asperiores doloremque
-                doloribus enim labore numquam quibusdam, sequi veritatis!</p>
-            <button>Lire</button>
-            <button>Commentaires</button>
-        </article>
-        <article class="center-elements">
-            <h2>Article 2</h2>
-            <img src="https://via.placeholder.com/250" alt="article image">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet asperiores doloremque
-                doloribus enim labore numquam quibusdam, sequi veritatis!</p>
-            <button>Lire</button>
-            <button>Commentaires</button>
-        </article>
+        <div class="grid-container">
+            <div class="grid-item item1">
+                2022, arrivée chez DonkeySchool, j'attends que les sabots poussent
+            </div>
+            <div class="grid-item item2">
+                2011, first job, découverte de la vie profesionnelle
+            </div>
+            <div class="grid-item item3">
+                2007, arrivée en France et obtention des papiers après avoir traversé la frontière de nuit avec les
+                passeurs
+            </div>
+            <div class="grid-item item4">
+                1987, ma naissance, année super balaise en vrai. Tous les 87 le savent. Désolé pour les autres
+            </div>
+        </div>
     </section>
-    <div class="center-elements">
-        <section>
+    <section>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-5">
+                    <article class="center-elements">
+                        <img src="../Images/wikidrumers-logo.png" alt="logo du site Wikidrummers"
+                            class="logo-article-sizing">
+                    </article>
+                </div>
+                <div class="col-5">
+                    <article class="center-elements">
+                        <img src="../Images/logo-vdm.svg" alt="logo du site Voyageurs du Monde"
+                            class="logo-article-sizing">
+                    </article>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-5">
+                    <h4>Drums once, drums forever</h4>
+                    <p>Groove, défouloir, créativité, esprit de groupe, voici ce que m'apporte la pratique de la
+                        batterie. Je vous laisse visiter ce site, plein de pépites. Et peut-être que vous vous
+                        laisserez tenter? </p>
+                </div>
+                <div class="col-5">
+                    <h4>La découverte du monde et des cultures</h4>
+                    <p>Voyager, découvrir une culture, admirer des paysages, rien de mieux pour se ressourcer. Un de mes
+                        meilleurs souvenirs : le Canada (en été svp... originaire de la Réunion, mon corps émet un code
+                        404 en cas de grand froid).</p>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-5 text-center">
+                    <button type="button" class="btn btn-outline-primary align-items-center">En savoir plus</button>
+                </div>
+                <div class="col-5 text-center">
+                    <button type="button" class="btn btn-outline-primary justify-content-center">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-contact">
+        <h2>Contact</h2>
+        <div class="form-layout">
             <form>
-                <label for="name">Nom et prénom</label><br>
-                <input type="text" id="name" placeholder="Nom et prénom"><br>
-                <label for="email">E-mail</label><br>
-                <input type="email" id="email" placeholder="E-mail"><br>
-                <label for="message"></label><br>
-                <textarea id="message" placeholder="Message"></textarea><br>
-                <input type="submit" value="Envoyer">
+                <div class="mb-3">
+                    <label for="email-input" class="form-label">Adresse e-mail</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="request-input" class="form-label">Votre demande</label>
+                    <textarea class="form-control" id="request-input" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
             </form>
-        </section>
-    </div>
-    <footer class="center-text ">
+        </div>
+    </section>
+
+    <footer class="text-center">
         <h4>Monportfolio.com</h4>
     </footer>
 </body>
