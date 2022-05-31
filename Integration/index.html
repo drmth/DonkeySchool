@@ -9,28 +9,74 @@
     <meta name="description"
         content="Matthieu Dronzin, Developpeur Web et Web Mobile. HTML/CSS, PHP, Javascript, Angular, Symfony.">
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet'
+        type='text/css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Portfolio Matthieu Dronzin</title>
 </head>
 
 <body>
-    <label for="checkbox-burger">
-        <img id="menu-burger" src="../Images/menu_black_24dp.svg" alt="Icône de menu">
-    </label>
-    <input type="checkbox" id="checkbox-burger">
-    <nav>
-        <ul class="menu">
-            <li class="menu-list">Projets</li>
-            <li class="menu-list">Etudes</li>
-            <li class="menu-list">Articles</li>
-            <li class="menu-list">Contact</li>
-        </ul>
-    </nav>
-    <h1>Mon Portfolio</h1>
-    <article>
-        <!-- TODO: replace image source -->
-        <img src="https://www.w3schools.com/howto/pineapple.jpg" alt="background image">
-        <h2 class="center-text">Nom prénom</h2>
-    </article>
+    <!-- header -->
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-auto">
+                <img id="avatar" src="../Images/AvatarMaker.svg" alt="my photo">
+            </div>
+            <div class="col">
+                <label for="checkbox-burger">
+                    <img id="menu-burger" src="../Images/menu_black_24dp.svg" alt="Icône de menu">
+                </label>
+                <input type="checkbox" id="checkbox-burger">
+                <nav class="stroke">
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#etudes">Etudes</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="bg">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="animated fadeInDown">
+                                  J<span style="color:#E04343;">o</span>hn<br>
+                                  <span>D<span style="color:#FFE800">o</span>e</span>
+                                </h1>
+                                <h3 class="animated fadeInUp delay-05s"><span class="rotate" style="display: inline; opacity: 0.0298262;">Photographer</span></h3>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--<div>
+            <img src="../Images/font-image.jpg" alt="background image" class="img-fluid">
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="animated fadeInDown">
+                  J<span style="color:#E04343;">o</span>hn<br>
+                  <span>D<span style="color:#FFE800">o</span>e</span>
+                </h1>
+                <h3 class="animated fadeInUp delay-05s"><span class="rotate" style="display: inline; opacity: 0.0298262;">Photographer</span></h3>
+              </div>
+        </div>-->
+    </section>
+
     <h2 class="center-text">Projets réalisés</h2>
     <section>
         <article class="center-elements">
