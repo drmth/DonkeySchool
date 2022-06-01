@@ -8,12 +8,12 @@
     <meta name="author" content="Matthieu Dronzin">
     <meta name="description"
         content="Matthieu Dronzin, Developpeur Web et Web Mobile. HTML/CSS, PHP, Javascript, Angular, Symfony.">
-    <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet'
         type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio Matthieu Dronzin</title>
 </head>
 
@@ -30,8 +30,8 @@
                 <input type="checkbox" id="checkbox-burger">
                 <nav class="stroke">
                     <ul>
-                        <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#projects">Projets</a></li>
                         <li><a href="#about">A propos</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -39,20 +39,19 @@
             </div>
         </div>
     </div>
-    <section>
+    <section id="home">
         <div class="container-fluid">
             <div class="row">
-                <div class="col bg">
+                <div class="col bg center-elements">
                     <h1>
-                        M<span style="color:#E04343;">a</span>tthieu<br>
-                        Dron<span style="color:#FFE800;">z<span style="color:#E04343;">i</span>n</span><br>
+                        Matthieu Dronzin<br>
                         Developpeur Web et Web Mobile
                     </h1>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="projects">
         <h2>Projets réalisés</h2>
         <div class="container">
             <div class="row justify-content-between">
@@ -62,21 +61,8 @@
                         <h3>Rocket launch</h3>
                         <p>Et oui, Elon a tout apris de moi.... Chut, c'est un secret.</p>
                         <p>
-                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">
-                                Link with href
-                            </a>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                Button with data-bs-target
-                            </button>
+                            <a href="https://www.spacex.com/vehicles/starship/" class="btn btn-primary" target="_blank">En savoir plus</a>
                         </p>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                Some placeholder content for the collapse component. This panel is hidden by default but
-                                revealed when the user activates the relevant trigger.
-                            </div>
-                        </div>
                     </article>
                 </div>
                 <div class="col-5 border border-light border-3 rounded">
@@ -84,19 +70,18 @@
                         <img src="../Images/minion.svg" alt=" Stuart project">
                         <h3>Etude de Stuart</h3>
                         <p>Un minion pas si mignon, prêt à tout pour se faire remarquer!</p>
-                        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
-                            title="Popover title"
-                            data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to
-                            toggle popover</button>
+                        <p>
+                            <a href="https://www.minions.fr/" class="btn btn-primary" target="_blank">En savoir plus</a>
+                        </p>
                     </article>
                 </div>
             </div>
         </div>
         </div>
     </section>
-    <section>
+    <section id="about">
         <h2>A propos de moi</h2>
-        <div class="bg-test"> 
+        <div class="etude-container">
             <div class="etude-inline">
                 <img id="avatar" src="../Images/AvatarMaker.svg" alt="Photo de Matthieu Dronzin">
                 <ul>
@@ -123,23 +108,26 @@
     <section>
         <div class="grid-container">
             <div class="grid-item item1">
-                2022, arrivée chez DonkeySchool, j'attends que les sabots poussent
             </div>
             <div class="grid-item item2">
-                2011, first job, découverte de la vie profesionnelle
+                <p>2022, arrivée chez DonkeySchool, j'attends que les sabots poussent</p>
             </div>
             <div class="grid-item item3">
-                2007, arrivée en France et obtention des papiers après avoir traversé la frontière de nuit avec les
-                passeurs
+                2011, first job, découverte de la vie profesionnelle
             </div>
             <div class="grid-item item4">
-                1987, ma naissance, année super balaise en vrai. Tous les 87 le savent. Désolé pour les autres
+            </div>
+            <div class="grid-item item5">
+            </div>
+            <div class="grid-item item6">
+                2011, arrivée en France pour les études et obtention des papiers après avoir traversé la frontière de nuit avec les
+                passeurs
             </div>
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="row justify-content-between">
+        <div class="container-fluid m-3">
+            <div class="row justify-content-center">
                 <div class="col-5">
                     <article class="center-elements">
                         <img src="../Images/wikidrumers-logo.png" alt="logo du site Wikidrummers"
@@ -153,7 +141,7 @@
                     </article>
                 </div>
             </div>
-            <div class="row justify-content-between">
+            <div class="row justify-content-center">
                 <div class="col-5">
                     <h4>Drums once, drums forever</h4>
                     <p>Groove, défouloir, créativité, esprit de groupe, voici ce que m'apporte la pratique de la
@@ -167,17 +155,17 @@
                         404 en cas de grand froid).</p>
                 </div>
             </div>
-            <div class="row justify-content-between">
+            <div class="row justify-content-center">
                 <div class="col-5 text-center">
-                    <button type="button" class="btn btn-outline-primary align-items-center">En savoir plus</button>
+                    <a href="https://wikidrummers.com/" class="btn btn-outline-primary align-items-center" target="_blank">En savoir plus</a>
                 </div>
                 <div class="col-5 text-center">
-                    <button type="button" class="btn btn-outline-primary justify-content-center">En savoir plus</button>
+                    <button type="button" href="https://www.voyageursdumonde.fr/voyage-sur-mesure" class="btn btn-outline-primary align-items-center" target="_blank">En savoir plus</button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-contact">
+    <section id="contact" class="bg-contact">
         <h2>Contact</h2>
         <div class="form-layout">
             <form>
@@ -193,9 +181,12 @@
             </form>
         </div>
     </section>
-
+    <div class="top-container">
+        <a href="#home" class="top">Back to Top &#8593;</a>
+    </div>
+    
     <footer class="text-center">
-        <h4>Monportfolio.com</h4>
+        <h4>Portfolio de Matthieu Dronzin</h4>
     </footer>
 </body>
 
