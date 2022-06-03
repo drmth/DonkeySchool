@@ -1,193 +1,242 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Matthieu Dronzin">
-    <meta name="description"
-        content="Matthieu Dronzin, Developpeur Web et Web Mobile. HTML/CSS, PHP, Javascript, Angular, Symfony.">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet'
-        type='text/css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Matthieu Dronzin" />
+    <meta
+      name="description"
+      content="Matthieu Dronzin, Developpeur Web et Web Mobile. HTML/CSS, PHP, Javascript, Angular, Symfony."
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio Matthieu Dronzin</title>
-</head>
+  </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-md-auto">
-                <img id="avatar" src="../Images/AvatarMaker.svg" alt="my photo">
-            </div>
-            <div class="col">
-                <label for="checkbox-burger">
-                    <img id="menu-burger" src="../Images/menu_black_24dp.svg" alt="Icône de menu">
-                </label>
-                <input type="checkbox" id="checkbox-burger">
-                <nav class="stroke">
-                    <ul>
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#about">A propos</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <section id="home">
+  <body>
+    <div>
+      <section id="home">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col bg center-elements">
-                    <h1>
-                        Matthieu Dronzin<br>
-                        Developpeur Web et Web Mobile
-                    </h1>
-                </div>
+          <div class="row row-cols-2 align-items-top justify-content-between">
+            <div class="col-md-auto">
+              <img id="avatar" src="../Images/AvatarMaker.svg" alt="my photo" />
             </div>
+            <div class="col-md-auto text-end mt-4">
+              <label for="checkbox-burger">
+                <img
+                  id="menu-burger"
+                  src="../Images/menu_black_24dp.svg"
+                  alt="icône de menu"
+                />
+              </label>
+              <input type="checkbox" id="checkbox-burger" />
+              <nav class="stroke">
+                <ul>
+                  <li><a href="#home">Accueil</a></li>
+                  <li><a href="#projects">Projets</a></li>
+                  <li><a href="#about">A propos</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="projects">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col bg center-elements">
+              <h1>
+                Matthieu Dronzin<br />
+                Developpeur Web et Web Mobile
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
         <h2>Projets réalisés</h2>
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-5 border border-light border-3 rounded">
-                    <article class="center-elements">
-                        <img src="../Images/rocket.svg" alt="rocket launch project">
-                        <h3>Rocket launch</h3>
-                        <p>Et oui, Elon a tout apris de moi.... Chut, c'est un secret.</p>
-                        <p>
-                            <a href="https://www.spacex.com/vehicles/starship/" class="btn btn-primary" target="_blank">En savoir plus</a>
-                        </p>
-                    </article>
-                </div>
-                <div class="col-5 border border-light border-3 rounded">
-                    <article class="center-elements">
-                        <img src="../Images/minion.svg" alt=" Stuart project">
-                        <h3>Etude de Stuart</h3>
-                        <p>Un minion pas si mignon, prêt à tout pour se faire remarquer!</p>
-                        <p>
-                            <a href="https://www.minions.fr/" class="btn btn-primary" target="_blank">En savoir plus</a>
-                        </p>
-                    </article>
-                </div>
+          <div class="row justify-content-between">
+            <div
+              class="col-lg-5 col-sm-10 mb-4 border border-light border-3 rounded text-center"
+            >
+              <img src="../Images/rocket.svg" alt="rocket launch project" />
+              <h3>Rocket launch</h3>
+              <p>
+                Et oui, Elon a tout appris de moi.... Chut, c'est un secret.
+              </p>
+              <p>
+                <a
+                  href="https://www.spacex.com/vehicles/starship/"
+                  class="btn btn-primary"
+                  >En savoir plus</a
+                >
+              </p>
             </div>
+            <div
+              class="col-lg-5 col-sm-10 mb-4 border border-light border-3 rounded text-center"
+            >
+              <img src="../Images/minion.svg" alt=" Stuart project" />
+              <h3>Etude de Stuart</h3>
+              <p>
+                Un minion pas si mignon, prêt à tout pour se faire remarquer!
+              </p>
+              <p>
+                <a href="https://www.minions.fr/" class="btn btn-primary"
+                  >En savoir plus</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
-        </div>
-    </section>
-    <section id="about">
+      </section>
+      <section id="about">
         <h2>A propos de moi</h2>
         <div class="etude-container">
-            <div class="etude-inline">
-                <img id="avatar" src="../Images/AvatarMaker.svg" alt="Photo de Matthieu Dronzin">
-                <ul>
-                    <li> <span class="material-icons">
-                            badge
-                        </span><span style='margin-right:1em; display:inline-block;'>&nbsp;</span>Matthieu DRONZIN</li>
-                    <li> <span class="material-icons">
-                            cake
-                        </span><span style='margin-right:1em; display:inline-block;'>&nbsp;</span>35 ans et toutes mes
-                        dents</li>
-                    <li><span class="material-icons">
-                            directions_car
-                        </span><span style='margin-right:1em; display:inline-block;'>&nbsp;</span>Permis A, B, C et D
-                    </li>
-                    <li> <span class="material-icons">
-                            phone
-                        </span><span style='margin-right:1em; display:inline-block;'>&nbsp;</span>06 16 (petit
-                        curieux....)</li>
-                </ul>
-                </ul>
-            </div>
+          <div class="etude-inline">
+            <img
+              id="avatar-more"
+              src="../Images/AvatarMaker.svg"
+              alt="Photo de Matthieu Dronzin"
+            />
+            <ul>
+              <li>
+                <span class="material-icons"> badge </span
+                ><span style="margin-right: 1em; display: inline-block"
+                  >&nbsp;</span
+                >Matthieu DRONZIN
+              </li>
+              <li>
+                <span class="material-icons"> cake </span
+                ><span style="margin-right: 1em; display: inline-block"
+                  >&nbsp;</span
+                >35 ans et toutes mes dents
+              </li>
+              <li>
+                <span class="material-icons"> directions_car </span
+                ><span style="margin-right: 1em; display: inline-block"
+                  >&nbsp;</span
+                >Permis A, B, C et D
+              </li>
+              <li>
+                <span class="material-icons"> phone </span
+                ><span style="margin-right: 1em; display: inline-block"
+                  >&nbsp;</span
+                >06 16 (petit curieux....)
+              </li>
+            </ul>
+          </div>
         </div>
-    </section>
-    <section>
         <div class="grid-container">
-            <div class="grid-item item1">
-            </div>
-            <div class="grid-item item2">
-                <p>2022, arrivée chez DonkeySchool, j'attends que les sabots poussent</p>
-            </div>
-            <div class="grid-item item3">
-                2011, first job, découverte de la vie profesionnelle
-            </div>
-            <div class="grid-item item4">
-            </div>
-            <div class="grid-item item5">
-            </div>
-            <div class="grid-item item6">
-                2011, arrivée en France pour les études et obtention des papiers après avoir traversé la frontière de nuit avec les
-                passeurs
-            </div>
+          <div class="grid-item item1"></div>
+          <div class="grid-item item2 m-4">
+            <p>
+              2022, arrivée chez DonkeySchool, j'attends que les sabots poussent
+            </p>
+          </div>
+          <div class="grid-item item3 m-4">
+            <p>2011, first job, découverte de la vie profesionnelle</p>
+          </div>
+          <div class="grid-item item4"></div>
+          <div class="grid-item item5"></div>
+          <div class="grid-item item6 m-4">
+            <p>
+              2011, arrivée en France pour les études et obtention des papiers
+              après avoir traversé la frontière de nuit avec les passeurs
+            </p>
+          </div>
         </div>
-    </section>
-    <section>
+      </section>
+      <section>
         <div class="container-fluid m-3">
-            <div class="row justify-content-center">
-                <div class="col-5">
-                    <article class="center-elements">
-                        <img src="../Images/wikidrumers-logo.png" alt="logo du site Wikidrummers"
-                            class="logo-article-sizing">
-                    </article>
-                </div>
-                <div class="col-5">
-                    <article class="center-elements">
-                        <img src="../Images/logo-vdm.svg" alt="logo du site Voyageurs du Monde"
-                            class="logo-article-sizing">
-                    </article>
-                </div>
+          <div class="row justify-content-center">
+            <div
+              class="col-lg-4 col-sm-9 m-4 p-4 align-items-center justify-content-center text-center border border-light border-3 rounded"
+            >
+              <img
+                src="../Images/wikidrumers-logo.png"
+                alt="logo du site Wikidrummers"
+                class="logo-article-sizing"
+              />
+              <h4>Drums once, drums forever</h4>
+              <p>
+                Groove, défouloir, créativité, esprit de groupe, voici ce que
+                m'apporte la pratique de la batterie. Je vous laisse visiter ce
+                site, plein de pépites. Et peut-être que vous vous laisserez
+                tenter?
+              </p>
+              <a
+                href="https://wikidrummers.com/"
+                class="btn btn-outline-primary"
+                >En savoir plus</a
+              >
             </div>
-            <div class="row justify-content-center">
-                <div class="col-5">
-                    <h4>Drums once, drums forever</h4>
-                    <p>Groove, défouloir, créativité, esprit de groupe, voici ce que m'apporte la pratique de la
-                        batterie. Je vous laisse visiter ce site, plein de pépites. Et peut-être que vous vous
-                        laisserez tenter? </p>
-                </div>
-                <div class="col-5">
-                    <h4>La découverte du monde et des cultures</h4>
-                    <p>Voyager, découvrir une culture, admirer des paysages, rien de mieux pour se ressourcer. Un de mes
-                        meilleurs souvenirs : le Canada (en été svp... originaire de la Réunion, mon corps émet un code
-                        404 en cas de grand froid).</p>
-                </div>
+            <div
+              class="col-lg-4 col-sm-9 m-4 p-4 align-items-center justify-content-center text-center border border-light border-3 rounded"
+            >
+              <img
+                src="../Images/logo-vdm.svg"
+                alt="logo du site Voyageurs du Monde"
+                class="logo-article-sizing"
+              />
+              <h4>La découverte du monde et des cultures</h4>
+              <p>
+                Voyager, découvrir une culture, admirer des paysages, rien de
+                mieux pour se ressourcer. Un de mes meilleurs souvenirs : le
+                Canada (en été svp... originaire de la Réunion, mon corps émet
+                un code 404 en cas de grand froid).
+              </p>
+              <a
+                href="https://www.voyageursdumonde.fr/voyage-sur-mesure"
+                class="btn btn-outline-primary button-to-bottom"
+                >En savoir plus</a
+              >
             </div>
-            <div class="row justify-content-center">
-                <div class="col-5 text-center">
-                    <a href="https://wikidrummers.com/" class="btn btn-outline-primary align-items-center" target="_blank">En savoir plus</a>
-                </div>
-                <div class="col-5 text-center">
-                    <button type="button" href="https://www.voyageursdumonde.fr/voyage-sur-mesure" class="btn btn-outline-primary align-items-center" target="_blank">En savoir plus</button>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
-    <section id="contact" class="bg-contact">
+      </section>
+      <section id="contact" class="bg-contact">
         <h2>Contact</h2>
         <div class="form-layout">
-            <form>
-                <div class="mb-3">
-                    <label for="email-input" class="form-label">Adresse e-mail</label>
-                    <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                    <label for="request-input" class="form-label">Votre demande</label>
-                    <textarea class="form-control" id="request-input" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-            </form>
+          <form>
+            <div class="mb-3">
+              <label for="email-input" class="form-label">Adresse e-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email-input"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="request-input" class="form-label"
+                >Votre demande</label
+              >
+              <textarea
+                class="form-control"
+                id="request-input"
+                rows="4"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
         </div>
-    </section>
-    <div class="top-container">
+      </section>
+      <div class="top-container">
         <a href="#home" class="top">Back to Top &#8593;</a>
+      </div>
     </div>
-    
     <footer class="text-center">
-        <h4>Portfolio de Matthieu Dronzin</h4>
+      <h4>Portfolio de Matthieu Dronzin</h4>
     </footer>
-</body>
-
+  </body>
 </html>
